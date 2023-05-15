@@ -6,6 +6,6 @@ export class ConsumerKafkaService {
     private readonly logger: PinoLogger,
   ) {}
   recieveMessage(message: string) {
-    this.logger.info('recieve message ', message)
+    this.logger.info(`recieve message ${message}`)
   }
 }

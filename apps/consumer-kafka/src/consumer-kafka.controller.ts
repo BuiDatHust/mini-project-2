@@ -9,7 +9,8 @@ export class ConsumerKafkaController {
 
   @KafkaTopic('kafka.topic.mini_project.test_send_message')
   public async recieveMessage(@Payload() message: any) {
-    const { data } = message.data
-    this.consumerKafkaService.recieveMessage(data.message)
+    console.log(message)
+    const msg = message.data.message
+    this.consumerKafkaService.recieveMessage(msg)
   }
 }
