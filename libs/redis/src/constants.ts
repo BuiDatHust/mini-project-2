@@ -1,0 +1,1 @@
+export const MINI_PROJECT_CACHE = 'MINI_PROJECT_CACHE'
